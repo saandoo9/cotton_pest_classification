@@ -11,7 +11,7 @@ def prepare_image_bin(image: Image.Image) -> torch.Tensor:
     ])
     if isinstance(image, np.ndarray):
         image = Image.fromarray(image)
-    return transform(image).unsqueeze(0)
+    return transform(image.convert("RGB")).unsqueeze(0)
 
 
 def prepare_image(image: Image.Image) -> torch.Tensor:
@@ -22,4 +22,4 @@ def prepare_image(image: Image.Image) -> torch.Tensor:
     ])
     if isinstance(image, np.ndarray):
         image = Image.fromarray(image)
-    return transform(image).unsqueeze(0)
+    return transform(image.convert("RGB")).unsqueeze(0)
