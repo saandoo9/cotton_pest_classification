@@ -43,10 +43,12 @@ RGB NumPy images and convert to RGB before resizing.
 
 ## Checkpoints and threshold
 
-**Trained checkpoints and datasets are not included.** Supply a binary model and
+**Trained checkpoints are available as releases.** Supply a binary model and
 a matching multiclass model, with training-time preprocessing and label order.
 The supplied helpers use ImageNet normalization and resize to 128 × 128 for the
-binary model and 224 × 224 for the multiclass model.
+binary model and 224 × 224 for the multiclass model. The cotton taxa dataset is 
+available at https://zenodo.org/records/17579307 and the general insect dataset
+at https://zenodo.org/records/8325384
 
 Two checkpoint formats are supported:
 
